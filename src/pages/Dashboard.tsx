@@ -1,7 +1,8 @@
 import type React from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "../components/Card"
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from "recharts"
-import { UsersIcon, DocumentTextIcon, TrendingUpIcon, AcademicCapIcon } from "@heroicons/react/24/outline"
+import { UsersIcon, DocumentTextIcon,AcademicCapIcon } from "@heroicons/react/24/outline"
+import { ArrowTrendingUpIcon } from "@heroicons/react/24/outline"
 
 // Fake data - Bu yerga real API dan ma'lumotlar kelib tushadi
 const monthlyData = [
@@ -61,7 +62,7 @@ const Dashboard: React.FC = () => {
           <CardContent className="p-6">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <TrendingUpIcon className="h-8 w-8 text-yellow-600" />
+                <ArrowTrendingUpIcon className="h-8 w-8 text-yellow-600" />
               </div>
               <div className="ml-4">
                 <p className="text-sm font-medium text-gray-500">Muvaffaqiyat %</p>
